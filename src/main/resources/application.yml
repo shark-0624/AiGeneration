@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:ai-generation-backend
+server:
+  port: 8321
+  servlet:
+    context-path: /api
+# springdoc-openapi
+springdoc:
+  group-configs:
+    - group: 'default'
+      packages-to-scan: com.shark.aigeneration.controller
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

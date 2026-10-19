@@ -1,8 +1,15 @@
 spring:
   application:
-    name:ai-generation-backend
+    name: ai-generation-backend
+  # mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yu_ai_code_mother
+    username: root
+    password: Aa13068925486
+
 server:
-  port: 8321
+  port: 8123
   servlet:
     context-path: /api
 # springdoc-openapi
